@@ -1,7 +1,7 @@
 ARG NODE_VERSION=22-alpine
 ARG BUF_PROTOC_ES=2.2.0
 
-FROM node:${NODE_VERSION} as protoc
+FROM node:${NODE_VERSION} AS protoc
 ARG BUF_PROTOC_ES
 RUN apk add --no-cache\
     bash \
